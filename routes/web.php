@@ -11,6 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'HomeController@index')->name("main");
+Route::get('/minor', 'HomeController@minor')->name("minor");
+Route::get('/login','HomeController@login')->name("login");
+Route::get('/cinema','HomeController@cinema')->name("cinema");
+Route::get('/cinemahall','HomeController@cinemahall')->name("cinemahall");
+Route::get('/schedule','HomeController@schedule')->name("schedule");
+Route::get('/cinema-add','HomeController@cinemaAdd')->name("cinema-add");
+
