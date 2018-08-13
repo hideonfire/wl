@@ -23,7 +23,7 @@
                 </div>
             </li>
             <li class="{{ isActiveRoute('main') }}">
-                <a href="{{ url('/') }}"><i class="fa fa-th-list"></i> <span class="nav-label">主页</span></a>
+                <a href="{{ url('/admin') }}"><i class="fa fa-th-list"></i> <span class="nav-label">主页</span></a>
             </li>
             <li class="{{ isActiveRoute('minor') }}">
                 <a href="{{ url('/minor') }}"><i class="fa fa-th-list"></i> <span class="nav-label">表格</span> </a>

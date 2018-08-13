@@ -10,8 +10,8 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', 'HomeController@index')->name("main");
+Route::get('/','HomeController@index');
+Route::get('/admin', 'HomeController@admin')->name("main");
 Route::get('/minor', 'HomeController@minor')->name("minor");
 Route::get('/login','HomeController@login')->name("login");
 Route::get('/cinema','HomeController@cinema')->name("cinema");
