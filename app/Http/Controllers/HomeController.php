@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
@@ -30,5 +31,9 @@ class HomeController extends Controller
 
     public function cinemaAdd(){
         return view('home/cinema-add');
+    }
+
+    public function uploadCinemaLogo(Request $request){
+        dd($request);
     }
 }

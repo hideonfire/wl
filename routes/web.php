@@ -18,4 +18,4 @@ Route::get('/cinema','HomeController@cinema')->name("cinema");
 Route::get('/cinemahall','HomeController@cinemahall')->name("cinemahall");
 Route::get('/schedule','HomeController@schedule')->name("schedule");
 Route::get('/cinema-add','HomeController@cinemaAdd')->name("cinema-add");
-
+Route::any('/upload-cinema-logo','HomeController@uploadCinemaLogo')->name("upload-cinema-logo");
